@@ -49,6 +49,7 @@ const config: Config = {
       fontFamily: {
         sans: ['var(--font-inter)'],
         serif: ['var(--font-playfair)'],
+        futura: ['var(--font-futura)'],
       },
       boxShadow: {
         sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',

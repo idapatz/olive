@@ -11,27 +11,55 @@ export default function Home() {
       <Navigation />
       <main className="min-h-screen">
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-sage-100 via-olive-50 to-sage-100 pt-20 pb-24 overflow-hidden">
+        <section className="relative bg-gradient-to-br from-sage-100 via-olive-50 to-sage-100 pt-28 pb-32 overflow-hidden">
+          {/* Hintergrundelemente */}
           <div className="absolute top-0 right-0 -mt-10 -mr-10 w-64 h-64 bg-olive-300 rounded-full opacity-20 blur-2xl animate-blob"></div>
           <div className="absolute bottom-0 left-0 -mb-32 -ml-32 w-96 h-96 bg-olive-400 rounded-full opacity-10 blur-3xl animate-blob animation-delay-2000"></div>
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
-              <div className="md:w-1/2">
-                <div className="relative">
-                  <span className="absolute -left-6 -top-6 text-6xl text-olive-300 opacity-60 animate-float">&#10077;</span>
-                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-sage-900 mb-6 relative">
-                    Unsere Mission: <span className="text-olive-600 hover:text-olive-700 transition-colors duration-300">Klarheit schaffen.</span> Für deine Gesundheit.
-            </h1>
-                </div>
-                <p className="text-lg text-sage-700 mb-6 pl-3 border-l-4 border-olive-300 transform hover:translate-x-1 transition-transform duration-300">
-                  Jeden Tag treffen wir Entscheidungen – im Supermarkt, in der Küche, in der Apotheke. Entscheidungen, die unsere Gesundheit direkt beeinflussen. Oft im Vertrauen darauf, das Richtige zu tun.
+          
+          {/* Olivenzweig Bild links */}
+          <div className="absolute left-0 bottom-0 h-[120%] w-1/3 pointer-events-none opacity-90 select-none -mb-32 z-10">
+            <div className="relative h-full w-full">
+              <Image 
+                src="/Olivenzweig2.png" 
+                alt="Olivenzweig Dekoration" 
+                fill
+                style={{ objectFit: 'contain', objectPosition: 'left bottom' }}
+                priority
+                className="select-none"
+              />
+            </div>
+          </div>
+          
+          {/* Olivenzweig Bild rechts */}
+          <div className="absolute right-0 bottom-0 h-[120%] w-1/3 pointer-events-none opacity-90 select-none -mb-32 z-10">
+            <div className="relative h-full w-full">
+              <Image 
+                src="/Olivenzweig2.png" 
+                alt="Olivenzweig Dekoration" 
+                fill
+                style={{ objectFit: 'contain', objectPosition: 'right bottom', transform: 'scaleX(-1)' }}
+                priority
+                className="select-none"
+              />
+            </div>
+          </div>
+          
+          {/* Hauptinhalt */}
+          <div className="container mx-auto px-4 relative z-20 mt-8">
+            <div className="flex flex-col items-center">
+              <div className="w-full max-w-3xl text-center">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal text-sage-900 mb-8 relative tracking-wide">
+                  Wir testen, was wirklich drinsteckt.
+                </h1>
+                <p className="text-xl text-sage-800 mb-6">
+                  Für dich. Für deine Gesundheit.
                 </p>
-                <p className="text-xl font-semibold text-sage-800 mb-8 transform hover:scale-105 origin-left transition-all duration-300">
-                  Doch wie sicher können wir uns dabei wirklich sein?
+                <p className="text-lg text-sage-700 mb-8">
+                  Unabhängige Analysen von Lebensmitteln & Supplements.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-            <Link 
-              href="#crowdfunding"
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Link 
+                    href="#crowdfunding"
                     className="group inline-block bg-olive-600 text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-olive-700 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl shadow-md"
                   >
                     Unterstütze uns <span className="ml-1 group-hover:ml-3 transition-all duration-300">→</span>
@@ -41,43 +69,15 @@ export default function Home() {
                     className="inline-block border-2 border-olive-600 text-olive-600 px-8 py-4 rounded-md text-lg font-semibold hover:bg-olive-50 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-md"
                   >
                     Mehr erfahren
-            </Link>
-                </div>
-              </div>
-              <div className="md:w-1/2 mt-10 md:mt-0">
-                <div className="bg-white p-2 rounded-lg shadow-xl overflow-hidden relative transform rotate-1 hover:rotate-2 hover:scale-105 transition-all duration-500">
-                  <div className="aspect-w-4 aspect-h-3 bg-gradient-to-tr from-olive-100 to-sage-50 rounded-lg overflow-hidden relative">
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="relative w-full h-full">
-                        <div className="absolute inset-0 bg-olive-200 opacity-50"></div>
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <svg className="w-24 h-24 text-olive-600 animate-pulse hover:animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="absolute -bottom-3 -right-3 w-24 h-24 bg-olive-100 rounded-full transform -rotate-12 animate-spin-slow"></div>
-                </div>
-                <div className="grid grid-cols-3 gap-4 mt-4">
-                  <div className="bg-sage-50 p-3 rounded-md shadow-sm flex items-center justify-center transform hover:scale-110 hover:bg-olive-100 transition-all duration-300 cursor-pointer group hover:rotate-2 hover:shadow-md">
-                    <span className="font-semibold text-sage-800 group-hover:text-olive-700">Unabhängig</span>
-                  </div>
-                  <div className="bg-sage-50 p-3 rounded-md shadow-sm flex items-center justify-center transform hover:scale-110 hover:bg-olive-100 transition-all duration-300 cursor-pointer group hover:-rotate-2 hover:shadow-md">
-                    <span className="font-semibold text-sage-800 group-hover:text-olive-700">Transparent</span>
-                  </div>
-                  <div className="bg-sage-50 p-3 rounded-md shadow-sm flex items-center justify-center transform hover:scale-110 hover:bg-olive-100 transition-all duration-300 cursor-pointer group hover:rotate-2 hover:shadow-md">
-                    <span className="font-semibold text-sage-800 group-hover:text-olive-700">Wissenschaftlich</span>
-                  </div>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
-          <div className="absolute bottom-0 left-0 w-full">
+          <div className="absolute bottom-0 left-0 w-full z-30">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" className="w-full h-auto transform transition-transform duration-1000 hover:scale-y-110 origin-bottom">
               <path fill="#ffffff" fillOpacity="1" d="M0,32L80,42.7C160,53,320,75,480,74.7C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,100L1360,100C1280,100,1120,100,960,100C800,100,640,100,480,100C320,100,160,100,80,100L0,100Z"></path>
-              </svg>
+            </svg>
           </div>
         </section>
 
@@ -87,19 +87,16 @@ export default function Home() {
           <div className="absolute bottom-20 left-10 w-48 h-48 bg-sage-100 rounded-full opacity-60 parallax" data-speed="-0.15"></div>
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16 scroll-trigger-item">
-              <span className="inline-block py-1 px-3 rounded-full bg-olive-100 text-olive-700 text-sm font-medium mb-4 transform hover:scale-110 transition-transform duration-300">WICHTIG ZU WISSEN</span>
-              <h2 className="text-3xl md:text-5xl font-bold text-center text-sage-900 mb-6 hover:text-sage-800 transition-colors duration-300">
-                Wie viel wissen wir <span className="text-olive-600 hover:text-olive-700 transition-colors duration-300 relative hover:after:content-[''] hover:after:absolute hover:after:bottom-0 hover:after:left-0 hover:after:w-full hover:after:h-1 hover:after:bg-olive-400 hover:after:rounded-full">wirklich?</span>
-            </h2>
+              <span className="inline-block py-1 px-3 rounded-full bg-olive-100 text-olive-700 text-sm font-medium mb-4 transform hover:scale-110 transition-transform duration-300">SECTION 1</span>
+              <h2 className="text-3xl md:text-5xl font-normal text-center text-sage-900 mb-6 hover:text-sage-800 transition-colors duration-300">
+                Was kommt wirklich auf den Teller – <span className="text-olive-600 hover:text-olive-700 transition-colors duration-300 relative hover:after:content-[''] hover:after:absolute hover:after:bottom-0 hover:after:left-0 hover:after:w-full hover:after:h-1 hover:after:bg-olive-400 hover:after:rounded-full">und in den Körper?</span>
+              </h2>
             </div>
             <p className="text-lg text-sage-700 max-w-3xl mx-auto text-center mb-12 scroll-trigger-item transform transition-all duration-700">
-              Was landet wirklich mit dem Apfel auf unserem Teller – und in unserem Körper?
-              Steckt im Nahrungsergänzungsmittel tatsächlich das, was auf der Packung steht – oder nur ein leeres Versprechen?
-              Hat das vermeintlich gesunde Produkt überhaupt noch relevante Nährstoffe?
+              Ist im Supplement drin, was versprochen wird?
             </p>
             <p className="text-lg text-sage-700 max-w-3xl mx-auto text-center mb-12 scroll-trigger-item transform transition-all duration-700">
-              <span className="font-semibold bg-olive-50 px-2 hover:bg-olive-100 transition-colors duration-300">Die Wahrheit ist:</span> Viele dieser Informationen sind nicht öffentlich zugänglich – oder so kompliziert, dass sie kaum jemand versteht.
-              Transparenz fehlt. Und damit die Grundlage für fundierte Entscheidungen über das, was wir essen, trinken und einnehmen.
+              Und wie viele Nährstoffe liefert unser Gemüse noch?
             </p>
             <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               <div className="text-center p-6 bg-sage-50 rounded-lg shadow-sm transform transition-all duration-500 hover:shadow-md hover:-translate-y-3 hover:-rotate-1 scroll-trigger-item">
@@ -108,7 +105,7 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-sage-900 hover:text-olive-700 transition-colors duration-300">Fehlendes Wissen</h3>
+                <h3 className="text-xl font-normal mb-3 text-sage-900 hover:text-olive-700 transition-colors duration-300">Fehlendes Wissen</h3>
                 <p className="text-sage-700 hover:text-sage-800 transition-colors duration-300">Wirkstoffe und Qualitätskriterien sind für Konsumenten nur schwer verständlich</p>
               </div>
               <div className="text-center p-6 bg-sage-50 rounded-lg shadow-sm transform transition-all duration-500 hover:shadow-md hover:-translate-y-3 hover:rotate-1 scroll-trigger-item animation-delay-100">
@@ -117,7 +114,7 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-sage-900 hover:text-olive-700 transition-colors duration-300">Intransparenz</h3>
+                <h3 className="text-xl font-normal mb-3 text-sage-900 hover:text-olive-700 transition-colors duration-300">Intransparenz</h3>
                 <p className="text-sage-700 hover:text-sage-800 transition-colors duration-300">Produktangaben sind oft irreführend oder unvollständig</p>
               </div>
               <div className="text-center p-6 bg-sage-50 rounded-lg shadow-sm transform transition-all duration-500 hover:shadow-md hover:-translate-y-3 hover:-rotate-1 scroll-trigger-item animation-delay-200">
@@ -126,7 +123,7 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-sage-900 hover:text-olive-700 transition-colors duration-300">Hohe Kosten</h3>
+                <h3 className="text-xl font-normal mb-3 text-sage-900 hover:text-olive-700 transition-colors duration-300">Hohe Kosten</h3>
                 <p className="text-sage-700 hover:text-sage-800 transition-colors duration-300">Qualitativ minderwertige Produkte zu überhöhten Preisen</p>
               </div>
             </div>
@@ -138,12 +135,12 @@ export default function Home() {
           <div className="absolute top-0 left-0 w-full h-32 bg-white" style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 0)' }}></div>
           <div className="absolute -top-10 -right-10 w-40 h-40 bg-olive-200 rounded-full opacity-30 blur-xl"></div>
           <div className="container mx-auto px-4 relative z-10">
-            <h2 className="text-3xl md:text-5xl font-bold text-center text-sage-900 mb-12">
+            <h2 className="text-3xl md:text-5xl font-normal text-center text-sage-900 mb-12">
               Unsere <span className="text-olive-600">Vision</span>
             </h2>
             <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg border-t-4 border-olive-500">
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-semibold text-olive-600 mb-4">Wir glauben, dass jede*r ein Recht auf verlässliche, verständliche und unabhängige Informationen hat.</h3>
+                <h3 className="text-2xl font-normal text-olive-600 mb-4">Wir glauben, dass jede*r ein Recht auf verlässliche, verständliche und unabhängige Informationen hat.</h3>
                 <div className="h-1 w-32 bg-olive-600 mx-auto"></div>
               </div>
               <div className="space-y-6">
@@ -183,7 +180,7 @@ export default function Home() {
             <div className="flex flex-col md:flex-row items-center gap-12 max-w-6xl mx-auto">
               <div className="md:w-1/2">
                 <span className="inline-block py-1 px-3 rounded-full bg-olive-100 text-olive-700 text-sm font-medium mb-4">UNSER STARTPUNKT</span>
-                <h2 className="text-3xl md:text-4xl font-bold text-sage-900 mb-6">
+                <h2 className="text-3xl md:text-4xl font-normal text-sage-900 mb-6">
                   Warum wir mit <span className="text-olive-600">Olivenöl</span> starten
                 </h2>
                 <p className="text-lg text-sage-700 mb-6">
@@ -217,7 +214,7 @@ export default function Home() {
                     <div className="absolute -top-8 -left-8 w-16 h-16 border-t-4 border-l-4 border-white opacity-40"></div>
                     <svg className="w-32 h-32 text-white opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                  </svg>
+                    </svg>
                     <div className="absolute -bottom-8 -right-8 w-16 h-16 border-b-4 border-r-4 border-white opacity-40"></div>
                   </div>
                 </div>
@@ -232,7 +229,7 @@ export default function Home() {
           <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-olive-300 rounded-full opacity-20 blur-xl transform translate-y-1/2"></div>
           <div className="container mx-auto px-4 text-center max-w-4xl relative z-10">
             <span className="inline-block py-1 px-3 rounded-full bg-olive-100 text-olive-700 text-sm font-medium mb-4">WERDE TEIL</span>
-            <h2 className="text-3xl md:text-5xl font-bold text-sage-900 mb-6">
+            <h2 className="text-3xl md:text-5xl font-normal text-sage-900 mb-6">
               Unser <span className="text-olive-600">Ziel</span>
             </h2>
             <p className="text-xl text-sage-700 mb-8">
@@ -277,7 +274,7 @@ export default function Home() {
         <section className="py-20 bg-white" id="about">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold text-center text-sage-900 mb-12">
+              <h2 className="text-3xl md:text-4xl font-normal text-center text-sage-900 mb-12">
                 Über uns
               </h2>
               <div className="mb-12 bg-sage-50 p-8 rounded-lg shadow-sm">
@@ -290,7 +287,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2 text-sage-900">Ida</h3>
+                    <h3 className="text-xl font-normal mb-2 text-sage-900">Ida</h3>
                     <p className="text-sage-700 mb-4">
                       Bildungswissenschaftlerin mit Fokus auf Gesundheit & Transparenz
                     </p>
@@ -302,7 +299,7 @@ export default function Home() {
               </div>
               
               <div className="bg-sage-50 p-8 rounded-lg shadow-sm">
-                <h3 className="text-xl font-semibold mb-4 text-center text-sage-900">Kontakt</h3>
+                <h3 className="text-xl font-normal mb-4 text-center text-sage-900">Kontakt</h3>
                 <div className="flex justify-center space-x-4 mb-6">
                   <a href="#" className="text-sage-600 hover:text-sage-800">
                     <span className="sr-only">LinkedIn</span>

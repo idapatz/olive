@@ -1,6 +1,13 @@
 import type { Metadata } from 'next'
-import { Inter, Playfair_Display } from 'next/font/google'
+import { Inter, Playfair_Display, Marcellus } from 'next/font/google'
 import './globals.css'
+
+// Marcellus als Futura-Ersatz (für die Hero-Überschrift)
+const marcellus = Marcellus({
+  subsets: ['latin'],
+  weight: ['400'],
+  variable: '--font-futura', // Wir behalten den Namen für Konsistenz
+});
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -23,8 +30,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="de" className={`${inter.variable} ${playfair.variable}`}>
-      <body className={inter.className}>{children}</body>
+    <html lang="de" className={`${inter.variable} ${playfair.variable} ${marcellus.variable}`}>
+      <body className={inter.className}>
+        {children}
+      </body>
     </html>
   )
 }
