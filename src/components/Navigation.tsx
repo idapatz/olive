@@ -21,17 +21,17 @@ export default function Navigation() {
   }, []);
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/95 shadow-sm backdrop-blur-sm py-2' : 'bg-transparent py-4'}`}>
-      <div className="container mx-auto px-4">
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-md py-3' : 'bg-transparent py-5'}`}>
+      <div className="container mx-auto px-6">
         <div className="flex justify-between items-center">
-          <Link href="/" className="text-sage-900 font-bold text-xl flex items-center">
-            <span className="text-olive-600 mr-1">●</span> Olive
+          <Link href="/" className="text-sage-900 font-normal text-xl flex items-center tracking-tight">
+            <span className="text-olive-600 mr-1.5">●</span> Olive
           </Link>
 
           {/* Mobile menu button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden"
+            className="md:hidden focus:outline-none"
             aria-label="Toggle menu"
           >
             <svg
@@ -39,7 +39,7 @@ export default function Navigation() {
               fill="none"
               strokeLinecap="round"
               strokeLinejoin="round"
-              strokeWidth="2"
+              strokeWidth="1.5"
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
@@ -52,19 +52,19 @@ export default function Navigation() {
           </button>
 
           {/* Desktop menu */}
-          <div className="hidden md:flex items-center space-x-8">
-            <Link href="#why" className="text-sage-800 hover:text-olive-600 font-medium transition-colors">
+          <div className="hidden md:flex items-center space-x-10">
+            <Link href="#why" className="text-sage-800 hover:text-olive-600 font-light transition-colors">
               Warum
             </Link>
-            <Link href="#olive-oil" className="text-sage-800 hover:text-olive-600 font-medium transition-colors">
+            <Link href="#olive-oil" className="text-sage-800 hover:text-olive-600 font-light transition-colors">
               Olivenöl
             </Link>
-            <Link href="#about" className="text-sage-800 hover:text-olive-600 font-medium transition-colors">
+            <Link href="#about" className="text-sage-800 hover:text-olive-600 font-light transition-colors">
               Über uns
             </Link>
             <Link
               href="#crowdfunding"
-              className="bg-olive-600 text-white px-5 py-2 rounded-full hover:bg-olive-700 transition-colors shadow-sm"
+              className="bg-transparent border border-olive-600 text-olive-600 px-6 py-2 rounded-none hover:bg-olive-600 hover:text-white transition-all duration-300"
             >
               Unterstützen
             </Link>
@@ -77,32 +77,32 @@ export default function Navigation() {
             isOpen ? 'max-h-60 opacity-100 mt-4' : 'max-h-0 opacity-0'
           }`}
         >
-          <div className="py-2 bg-white rounded-lg shadow-lg">
+          <div className="py-2 bg-white/95 backdrop-blur-md border-t border-sage-100">
             <Link
               href="#why"
-              className="block px-4 py-2 text-sage-800 hover:bg-sage-50"
+              className="block px-4 py-3 text-sage-800 hover:bg-sage-50 font-light"
               onClick={() => setIsOpen(false)}
             >
               Warum
             </Link>
             <Link
               href="#olive-oil"
-              className="block px-4 py-2 text-sage-800 hover:bg-sage-50"
+              className="block px-4 py-3 text-sage-800 hover:bg-sage-50 font-light"
               onClick={() => setIsOpen(false)}
             >
               Olivenöl
             </Link>
             <Link
               href="#about"
-              className="block px-4 py-2 text-sage-800 hover:bg-sage-50"
+              className="block px-4 py-3 text-sage-800 hover:bg-sage-50 font-light"
               onClick={() => setIsOpen(false)}
             >
               Über uns
             </Link>
-            <div className="px-4 py-2">
+            <div className="px-4 py-3">
               <Link
                 href="#crowdfunding"
-                className="block w-full text-center bg-olive-600 text-white px-4 py-2 rounded-full hover:bg-olive-700"
+                className="block w-full text-center border border-olive-600 text-olive-600 px-4 py-2 hover:bg-olive-600 hover:text-white transition-all duration-300"
                 onClick={() => setIsOpen(false)}
               >
                 Unterstützen

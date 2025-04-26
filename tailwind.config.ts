@@ -10,23 +10,23 @@ const config: Config = {
     extend: {
       colors: {
         sage: {
-          50: '#f7f7f4',
-          100: '#e6e7e2',
-          200: '#d1d3c8',
-          300: '#b3b7a7',
-          400: '#959a85',
-          500: '#7d826d',
-          600: '#65695a',
-          700: '#54574b',
-          800: '#484a41',
+          50: '#f8f8f7',
+          100: '#f0f0ee',
+          200: '#e8e8e5',
+          300: '#d5d6cf',
+          400: '#b3b7a7',
+          500: '#959a85',
+          600: '#797f6d',
+          700: '#5f645a',
+          800: '#54574b',
           900: '#3c3d37',
         },
         olive: {
-          50: '#f9faf5',
-          100: '#f1f4e5',
-          200: '#e3e9cb',
-          300: '#d0dba8',
-          400: '#b8c97c',
+          50: '#fbfbf8',
+          100: '#f5f7ed',
+          200: '#eaeedb',
+          300: '#d6dfb8',
+          400: '#c5d29a',
           500: '#a3b85b',
           600: '#879c42',
           700: '#677832',
@@ -48,8 +48,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ['var(--font-inter)'],
-        serif: ['var(--font-playfair)'],
-        futura: ['var(--font-futura)'],
+        space: ['var(--font-space)'],
       },
       boxShadow: {
         sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
@@ -63,23 +62,17 @@ const config: Config = {
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       animation: {
-        'float': 'float 6s ease-in-out infinite',
-        'spin-slow': 'spin-slow 12s linear infinite',
-        'blob': 'blob 7s infinite',
+        'float': 'float 8s ease-in-out infinite',
+        'fade': 'fade 5s ease-in-out infinite',
       },
       keyframes: {
         float: {
           '0%, 100%': { transform: 'translateY(0px)' },
-          '50%': { transform: 'translateY(-10px)' },
+          '50%': { transform: 'translateY(-5px)' },
         },
-        'spin-slow': {
-          'from': { transform: 'rotate(-12deg)' },
-          'to': { transform: 'rotate(348deg)' },
-        },
-        blob: {
-          '0%, 100%': { transform: 'scale(1) translate(0px, 0px)' },
-          '33%': { transform: 'scale(1.1) translate(20px, -10px)' },
-          '66%': { transform: 'scale(0.9) translate(-20px, 10px)' },
+        fade: {
+          '0%, 100%': { opacity: '0.8' },
+          '50%': { opacity: '1' },
         },
       },
     },

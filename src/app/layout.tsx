@@ -1,22 +1,18 @@
 import type { Metadata } from 'next'
-import { Inter, Playfair_Display, Marcellus } from 'next/font/google'
+import { Inter, Space_Grotesk } from 'next/font/google'
 import './globals.css'
 
-// Marcellus als Futura-Ersatz (für die Hero-Überschrift)
-const marcellus = Marcellus({
+// Space Grotesk als moderne, minimalistische Heading-Schrift
+const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
-  weight: ['400'],
-  variable: '--font-futura', // Wir behalten den Namen für Konsistenz
+  weight: ['300', '400', '500'],
+  variable: '--font-space',
 });
 
 const inter = Inter({ 
   subsets: ['latin'],
+  weight: ['300', '400', '500'],
   variable: '--font-inter',
-})
-
-const playfair = Playfair_Display({ 
-  subsets: ['latin'],
-  variable: '--font-playfair',
 })
 
 export const metadata: Metadata = {
@@ -30,8 +26,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="de" className={`${inter.variable} ${playfair.variable} ${marcellus.variable}`}>
-      <body className={inter.className}>
+    <html lang="de" className={`${inter.variable} ${spaceGrotesk.variable}`}>
+      <body className={`${inter.className} antialiased text-sage-900 bg-white`}>
         {children}
       </body>
     </html>

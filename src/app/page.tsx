@@ -11,62 +11,28 @@ export default function Home() {
       <Navigation />
       <main className="min-h-screen">
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-sage-100 via-olive-50 to-sage-100 pt-28 pb-32 overflow-hidden">
-          {/* Hintergrundelemente */}
-          <div className="absolute top-0 right-0 -mt-10 -mr-10 w-64 h-64 bg-olive-300 rounded-full opacity-20 blur-2xl animate-blob"></div>
-          <div className="absolute bottom-0 left-0 -mb-32 -ml-32 w-96 h-96 bg-olive-400 rounded-full opacity-10 blur-3xl animate-blob animation-delay-2000"></div>
-          
-          {/* Olivenzweig Bild links */}
-          <div className="absolute left-0 bottom-0 h-[120%] w-1/3 pointer-events-none opacity-90 select-none -mb-32 z-10">
-            <div className="relative h-full w-full">
-              <Image 
-                src="/Olivenzweig2.png" 
-                alt="Olivenzweig Dekoration" 
-                fill
-                style={{ objectFit: 'contain', objectPosition: 'left bottom' }}
-                priority
-                className="select-none"
-              />
-            </div>
-          </div>
-          
-          {/* Olivenzweig Bild rechts */}
-          <div className="absolute right-0 bottom-0 h-[120%] w-1/3 pointer-events-none opacity-90 select-none -mb-32 z-10">
-            <div className="relative h-full w-full">
-              <Image 
-                src="/Olivenzweig2.png" 
-                alt="Olivenzweig Dekoration" 
-                fill
-                style={{ objectFit: 'contain', objectPosition: 'right bottom', transform: 'scaleX(-1)' }}
-                priority
-                className="select-none"
-              />
-            </div>
-          </div>
+        <section className="relative bg-white pt-32 pb-20 overflow-hidden">
+          {/* Subtile Hintergrundelemente */}
+          <div className="absolute top-0 right-0 -mt-10 -mr-10 w-64 h-64 bg-olive-200 rounded-full opacity-10 blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 -mb-32 -ml-32 w-96 h-96 bg-olive-300 rounded-full opacity-5 blur-3xl"></div>
           
           {/* Hauptinhalt */}
-          <div className="container mx-auto px-4 relative z-20 mt-8">
+          <div className="container mx-auto px-6 relative z-20">
             <div className="flex flex-col items-center">
-              <div className="w-full max-w-3xl text-center">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal text-sage-900 mb-8 relative tracking-wide">
-                  Wir testen, was wirklich drinsteckt.
+              <div className="w-full max-w-2xl text-center">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal text-sage-900 mb-10 relative tracking-tight leading-tight font-sans">
+                  Detaillierte Analysen von Lebensmitteln & Supplements.
                 </h1>
-                <p className="text-xl text-sage-800 mb-6">
-                  Für dich. Für deine Gesundheit.
-                </p>
-                <p className="text-lg text-sage-700 mb-8">
-                  Unabhängige Analysen von Lebensmitteln & Supplements.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <div className="flex flex-col sm:flex-row gap-6 justify-center">
                   <Link 
                     href="#crowdfunding"
-                    className="group inline-block bg-olive-600 text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-olive-700 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl shadow-md"
+                    className="group inline-block bg-transparent border border-olive-600 text-olive-600 px-8 py-4 hover:bg-olive-600 hover:text-white text-lg font-light transition-all duration-300"
                   >
                     Unterstütze uns <span className="ml-1 group-hover:ml-3 transition-all duration-300">→</span>
                   </Link>
                   <Link 
                     href="#why"
-                    className="inline-block border-2 border-olive-600 text-olive-600 px-8 py-4 rounded-md text-lg font-semibold hover:bg-olive-50 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-md"
+                    className="inline-block text-sage-700 px-8 py-4 text-lg font-light hover:text-olive-600 transition-all duration-300"
                   >
                     Mehr erfahren
                   </Link>
@@ -74,97 +40,90 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="absolute bottom-0 left-0 w-full z-30">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" className="w-full h-auto transform transition-transform duration-1000 hover:scale-y-110 origin-bottom">
-              <path fill="#ffffff" fillOpacity="1" d="M0,32L80,42.7C160,53,320,75,480,74.7C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,100L1360,100C1280,100,1120,100,960,100C800,100,640,100,480,100C320,100,160,100,80,100L0,100Z"></path>
-            </svg>
-          </div>
+          
+          {/* Minimalistische Dekoration am unteren Rand */}
+          <div className="absolute bottom-0 left-0 w-full h-px bg-sage-100"></div>
         </section>
 
         {/* Warum das wichtig ist */}
-        <section className="py-20 bg-white relative scroll-trigger" id="why">
-          <div className="absolute top-40 right-10 w-32 h-32 bg-olive-100 rounded-full opacity-50 parallax" data-speed="0.2"></div>
-          <div className="absolute bottom-20 left-10 w-48 h-48 bg-sage-100 rounded-full opacity-60 parallax" data-speed="-0.15"></div>
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="text-center mb-16 scroll-trigger-item">
-              <span className="inline-block py-1 px-3 rounded-full bg-olive-100 text-olive-700 text-sm font-medium mb-4 transform hover:scale-110 transition-transform duration-300">SECTION 1</span>
-              <h2 className="text-3xl md:text-5xl font-normal text-center text-sage-900 mb-6 hover:text-sage-800 transition-colors duration-300">
-                Was kommt wirklich auf den Teller – <span className="text-olive-600 hover:text-olive-700 transition-colors duration-300 relative hover:after:content-[''] hover:after:absolute hover:after:bottom-0 hover:after:left-0 hover:after:w-full hover:after:h-1 hover:after:bg-olive-400 hover:after:rounded-full">und in den Körper?</span>
+        <section className="py-24 bg-white relative" id="why">
+          <div className="container mx-auto px-6 relative z-10">
+            <div className="text-center mb-20">
+              <span className="inline-block py-1 px-3 text-olive-600 text-sm mb-6 font-light border-b border-olive-200">SECTION 1</span>
+              <h2 className="text-3xl md:text-4xl font-normal text-center text-sage-900 mb-8 tracking-tight">
+                Was kommt wirklich auf den Teller – <span className="text-olive-600">und in den Körper?</span>
               </h2>
             </div>
-            <p className="text-lg text-sage-700 max-w-3xl mx-auto text-center mb-12 scroll-trigger-item transform transition-all duration-700">
+            <p className="text-xl text-sage-700 max-w-2xl mx-auto text-center mb-10 font-light">
               Ist im Supplement drin, was versprochen wird?
             </p>
-            <p className="text-lg text-sage-700 max-w-3xl mx-auto text-center mb-12 scroll-trigger-item transform transition-all duration-700">
+            <p className="text-xl text-sage-700 max-w-2xl mx-auto text-center mb-16 font-light">
               Und wie viele Nährstoffe liefert unser Gemüse noch?
             </p>
-            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              <div className="text-center p-6 bg-sage-50 rounded-lg shadow-sm transform transition-all duration-500 hover:shadow-md hover:-translate-y-3 hover:-rotate-1 scroll-trigger-item">
-                <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-olive-100 rounded-full transform hover:scale-110 transition-transform duration-300 hover:rotate-12">
-                  <svg className="w-10 h-10 text-olive-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            <div className="grid md:grid-cols-3 gap-12 max-w-5xl mx-auto">
+              <div className="text-center p-8 border-t border-sage-200 transform transition-all duration-500 hover:-translate-y-2">
+                <div className="w-12 h-12 mx-auto mb-6 flex items-center justify-center">
+                  <svg className="w-8 h-8 text-olive-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-normal mb-3 text-sage-900 hover:text-olive-700 transition-colors duration-300">Fehlendes Wissen</h3>
-                <p className="text-sage-700 hover:text-sage-800 transition-colors duration-300">Wirkstoffe und Qualitätskriterien sind für Konsumenten nur schwer verständlich</p>
+                <h3 className="text-xl font-light mb-4 text-sage-900">Fehlendes Wissen</h3>
+                <p className="text-sage-700 font-light">Wirkstoffe und Qualitätskriterien sind für Konsumenten nur schwer verständlich</p>
               </div>
-              <div className="text-center p-6 bg-sage-50 rounded-lg shadow-sm transform transition-all duration-500 hover:shadow-md hover:-translate-y-3 hover:rotate-1 scroll-trigger-item animation-delay-100">
-                <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-olive-100 rounded-full transform hover:scale-110 transition-transform duration-300 hover:-rotate-12">
-                  <svg className="w-10 h-10 text-olive-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              <div className="text-center p-8 border-t border-sage-200 transform transition-all duration-500 hover:-translate-y-2">
+                <div className="w-12 h-12 mx-auto mb-6 flex items-center justify-center">
+                  <svg className="w-8 h-8 text-olive-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-normal mb-3 text-sage-900 hover:text-olive-700 transition-colors duration-300">Intransparenz</h3>
-                <p className="text-sage-700 hover:text-sage-800 transition-colors duration-300">Produktangaben sind oft irreführend oder unvollständig</p>
+                <h3 className="text-xl font-light mb-4 text-sage-900">Intransparenz</h3>
+                <p className="text-sage-700 font-light">Produktangaben sind oft irreführend oder unvollständig</p>
               </div>
-              <div className="text-center p-6 bg-sage-50 rounded-lg shadow-sm transform transition-all duration-500 hover:shadow-md hover:-translate-y-3 hover:-rotate-1 scroll-trigger-item animation-delay-200">
-                <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-olive-100 rounded-full transform hover:scale-110 transition-transform duration-300 hover:rotate-12">
-                  <svg className="w-10 h-10 text-olive-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              <div className="text-center p-8 border-t border-sage-200 transform transition-all duration-500 hover:-translate-y-2">
+                <div className="w-12 h-12 mx-auto mb-6 flex items-center justify-center">
+                  <svg className="w-8 h-8 text-olive-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-normal mb-3 text-sage-900 hover:text-olive-700 transition-colors duration-300">Hohe Kosten</h3>
-                <p className="text-sage-700 hover:text-sage-800 transition-colors duration-300">Qualitativ minderwertige Produkte zu überhöhten Preisen</p>
+                <h3 className="text-xl font-light mb-4 text-sage-900">Hohe Kosten</h3>
+                <p className="text-sage-700 font-light">Qualitativ minderwertige Produkte zu überhöhten Preisen</p>
               </div>
             </div>
           </div>
         </section>
 
         {/* Unsere Idee / Vision */}
-        <section className="py-20 bg-gradient-to-br from-sage-50 to-sage-100 relative overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-32 bg-white" style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 0)' }}></div>
-          <div className="absolute -top-10 -right-10 w-40 h-40 bg-olive-200 rounded-full opacity-30 blur-xl"></div>
-          <div className="container mx-auto px-4 relative z-10">
-            <h2 className="text-3xl md:text-5xl font-normal text-center text-sage-900 mb-12">
-              Unsere <span className="text-olive-600">Vision</span>
-            </h2>
-            <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg border-t-4 border-olive-500">
-              <div className="text-center mb-8">
-                <h3 className="text-2xl font-normal text-olive-600 mb-4">Wir glauben, dass jede*r ein Recht auf verlässliche, verständliche und unabhängige Informationen hat.</h3>
-                <div className="h-1 w-32 bg-olive-600 mx-auto"></div>
+        <section className="py-24 bg-white relative overflow-hidden">
+          <div className="container mx-auto px-6 relative z-10">
+            <div className="text-center mb-20">
+              <span className="inline-block py-1 px-3 text-olive-600 text-sm mb-6 font-light border-b border-olive-200">VISION</span>
+              <h2 className="text-3xl md:text-4xl font-normal text-center text-sage-900 mb-8 tracking-tight">
+                Unsere <span className="text-olive-600">Vision</span>
+              </h2>
+            </div>
+            <div className="max-w-3xl mx-auto">
+              <div className="text-center mb-16">
+                <h3 className="text-2xl font-light text-sage-800 mb-6 leading-relaxed">Alle Menschen sollen Zugang zu verlässlichen, verständlichen und unabhängigen Informationen haben.</h3>
+                <div className="h-px w-16 bg-olive-400 mx-auto"></div>
               </div>
-              <div className="space-y-6">
-                <p className="text-lg text-sage-800 font-medium">Unsere Idee:</p>
-                <div className="flex items-start bg-sage-50 p-4 rounded-lg hover:bg-sage-100 transition-colors duration-300">
+              <div className="space-y-10">
+                <p className="text-xl text-sage-800 font-light mb-8">Was wir tun:</p>
+                <div className="flex items-start">
                   <div className="flex-shrink-0 mt-1">
-                    <svg className="w-6 h-6 text-olive-600" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
+                    <div className="w-4 h-4 border border-olive-400"></div>
                   </div>
-                  <p className="ml-3 text-lg text-sage-800">Produkte wissenschaftlich analysieren – unabhängig, transparent und nachvollziehbar.</p>
+                  <p className="ml-6 text-xl text-sage-700 font-light">Lebensmittel und Supplements werden wissenschaftlich analysiert – unabhängig, transparent und nachvollziehbar.</p>
                 </div>
-                <div className="flex items-start bg-sage-50 p-4 rounded-lg hover:bg-sage-100 transition-colors duration-300">
+                <div className="flex items-start">
                   <div className="flex-shrink-0 mt-1">
-                    <svg className="w-6 h-6 text-olive-600" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
+                    <div className="w-4 h-4 border border-olive-400"></div>
                   </div>
-                  <p className="ml-3 text-lg text-sage-800">Und die Ergebnisse so aufbereiten, dass sie jede*r verstehen kann.</p>
+                  <p className="ml-6 text-xl text-sage-700 font-light">Die Ergebnisse werden so aufbereitet, dass sie leicht verständlich und zugänglich sind.</p>
                 </div>
-                <div className="text-lg text-sage-800 mt-6 p-4 border-l-4 border-olive-300 bg-olive-50 rounded-r-lg">
-                  <p className="font-medium">
-                    Damit du frei und bewusst wählen kannst.<br />
-                    Für dich. Für deine Familie. Für ein langes, gesundes Leben.
+                <div className="text-xl text-sage-800 mt-16 pt-10 border-t border-sage-100">
+                  <p className="font-light text-center">
+                    Damit bewusste Entscheidungen möglich werden.<br />
+                    Für mehr Gesundheit. Für mehr Lebensqualität.
                   </p>
                 </div>
               </div>
@@ -173,51 +132,29 @@ export default function Home() {
         </section>
 
         {/* Olivenöl Section */}
-        <section className="py-20 bg-white relative overflow-hidden" id="olive-oil">
-          <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-olive-100 rounded-full opacity-50"></div>
-          <div className="absolute top-40 right-0 w-96 h-96 bg-sage-50 rounded-full opacity-70"></div>
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="flex flex-col md:flex-row items-center gap-12 max-w-6xl mx-auto">
+        <section className="py-24 bg-gray-50 relative" id="olive-oil">
+          <div className="container mx-auto px-6 relative z-10">
+            <div className="flex flex-col md:flex-row items-start gap-16 max-w-5xl mx-auto">
               <div className="md:w-1/2">
-                <span className="inline-block py-1 px-3 rounded-full bg-olive-100 text-olive-700 text-sm font-medium mb-4">UNSER STARTPUNKT</span>
-                <h2 className="text-3xl md:text-4xl font-normal text-sage-900 mb-6">
+                <span className="inline-block py-1 px-3 text-olive-600 text-sm mb-6 font-light border-b border-olive-200">UNSER STARTPUNKT</span>
+                <h2 className="text-3xl md:text-4xl font-normal text-sage-900 mb-10 tracking-tight">
                   Warum wir mit <span className="text-olive-600">Olivenöl</span> starten
                 </h2>
-                <p className="text-lg text-sage-700 mb-6">
+                <p className="text-lg text-sage-700 mb-8 font-light">
                   Olivenöl ist mehr als nur ein Lebensmittel – es ist ein echtes Schlüsselprodukt für Gesundheit und Langlebigkeit.
                 </p>
-                <p className="text-lg text-sage-700 mb-6">
+                <p className="text-lg text-sage-700 mb-8 font-light">
                   Zahlreiche Studien zeigen: Hochwertiges Olivenöl kann chronische Entzündungen im Körper senken, das Herz schützen und sogar das Risiko altersbedingter Erkrankungen reduzieren. In der Diskussion um Longevity spielt es eine zentrale Rolle.
                 </p>
-                <div className="p-4 bg-sage-50 rounded-lg mb-6 border-l-4 border-olive-500">
-                  <p className="text-lg text-sage-800">
-                    Doch trotz seines Potenzials ist der Markt kaum durchschaubar: Die Unterschiede in Qualität und Wirkung sind gewaltig – und für Verbraucher*innen kaum zu erkennen.
-                  </p>
-                </div>
-                <p className="text-lg text-sage-700 mb-6 font-medium">
+              </div>
+              <div className="md:w-1/2 border-t md:border-l md:border-t-0 border-sage-200 pt-10 md:pt-0 md:pl-16">
+                <p className="text-lg text-sage-800 mb-10 font-light">
+                  Doch trotz seines Potenzials ist der Markt kaum durchschaubar: Die Unterschiede in Qualität und Wirkung sind gewaltig – und für Verbraucher*innen kaum zu erkennen.
+                </p>
+                <p className="text-xl text-sage-700 font-light">
                   Deshalb starten wir genau hier.<br />
                   Mit einem Produkt, das viele täglich nutzen – aber kaum jemand wirklich beurteilen kann.
                 </p>
-                <Link 
-                  href="/olivenoel"
-                  className="inline-flex items-center text-olive-600 font-semibold hover:text-olive-700 group"
-                >
-                  Mehr über unsere erste Testreihe
-                  <svg className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              </div>
-              <div className="md:w-1/2 relative h-72 md:h-96 rounded-lg overflow-hidden shadow-xl">
-                <div className="absolute inset-0 bg-gradient-to-br from-olive-100 to-olive-300 flex items-center justify-center transform hover:scale-105 transition-transform duration-500">
-                  <div className="relative">
-                    <div className="absolute -top-8 -left-8 w-16 h-16 border-t-4 border-l-4 border-white opacity-40"></div>
-                    <svg className="w-32 h-32 text-white opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                    </svg>
-                    <div className="absolute -bottom-8 -right-8 w-16 h-16 border-b-4 border-r-4 border-white opacity-40"></div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
