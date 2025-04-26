@@ -20,7 +20,7 @@ export default function Home() {
           <div className="container mx-auto px-6 relative z-20">
             <div className="flex flex-col items-center">
               <div className="w-full max-w-2xl text-center">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal text-sage-900 mb-10 relative tracking-tight leading-tight font-sans">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal text-sage-900 mb-24 relative tracking-tight leading-tight font-sans">
                   Detaillierte Analysen von Lebensmitteln & Supplements.
                 </h1>
                 <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -49,7 +49,7 @@ export default function Home() {
         <section className="py-24 bg-white relative" id="why">
           <div className="container mx-auto px-6 relative z-10">
             <div className="text-center mb-20">
-              <span className="inline-block py-1 px-3 text-olive-600 text-sm mb-6 font-light border-b border-olive-200">SECTION 1</span>
+              <span className="inline-block py-1 px-3 text-olive-600 text-sm mb-6 font-light border-b border-olive-200">KLARHEIT</span>
               <h2 className="text-3xl md:text-4xl font-normal text-center text-sage-900 mb-8 tracking-tight">
                 Was kommt wirklich auf den Teller – <span className="text-olive-600">und in den Körper?</span>
               </h2>
@@ -98,27 +98,31 @@ export default function Home() {
             <div className="text-center mb-20">
               <span className="inline-block py-1 px-3 text-olive-600 text-sm mb-6 font-light border-b border-olive-200">VISION</span>
               <h2 className="text-3xl md:text-4xl font-normal text-center text-sage-900 mb-8 tracking-tight">
-                Unsere <span className="text-olive-600">Vision</span>
+                <span className="text-olive-600">Transparenz</span> über alles, was drin ist.
               </h2>
             </div>
             <div className="max-w-3xl mx-auto">
-              <div className="text-center mb-16">
-                <h3 className="text-2xl font-light text-sage-800 mb-6 leading-relaxed">Alle Menschen sollen Zugang zu verlässlichen, verständlichen und unabhängigen Informationen haben.</h3>
-                <div className="h-px w-16 bg-olive-400 mx-auto"></div>
-              </div>
               <div className="space-y-10">
-                <p className="text-xl text-sage-800 font-light mb-8">Was wir tun:</p>
-                <div className="flex items-start">
-                  <div className="flex-shrink-0 mt-1">
-                    <div className="w-4 h-4 border border-olive-400"></div>
+                <div className="max-w-lg mx-auto">
+                  <p className="text-xl text-sage-800 font-light mb-4">Was wir tun:</p>
+                  <div className="flex items-start mb-6">
+                    <div className="flex-shrink-0 mt-1">
+                      <div className="w-4 h-4 border border-olive-400"></div>
+                    </div>
+                    <p className="ml-6 text-xl text-sage-700 font-light">Analyse von Inhaltsstoffen</p>
                   </div>
-                  <p className="ml-6 text-xl text-sage-700 font-light">Lebensmittel und Supplements werden wissenschaftlich analysiert – unabhängig, transparent und nachvollziehbar.</p>
-                </div>
-                <div className="flex items-start">
-                  <div className="flex-shrink-0 mt-1">
-                    <div className="w-4 h-4 border border-olive-400"></div>
+                  <div className="flex items-start mb-6">
+                    <div className="flex-shrink-0 mt-1">
+                      <div className="w-4 h-4 border border-olive-400"></div>
+                    </div>
+                    <p className="ml-6 text-xl text-sage-700 font-light">Test auf Pestizide und Schadstoffe</p>
                   </div>
-                  <p className="ml-6 text-xl text-sage-700 font-light">Die Ergebnisse werden so aufbereitet, dass sie leicht verständlich und zugänglich sind.</p>
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 mt-1">
+                      <div className="w-4 h-4 border border-olive-400"></div>
+                    </div>
+                    <p className="ml-6 text-xl text-sage-700 font-light">Unabhängig, wissenschaftlich, nachvollziehbar</p>
+                  </div>
                 </div>
                 <div className="text-xl text-sage-800 mt-16 pt-10 border-t border-sage-100">
                   <p className="font-light text-center">
