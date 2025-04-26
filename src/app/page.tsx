@@ -211,12 +211,12 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Über uns Section */}
+        {/* About Section */}
         <section className="py-20 bg-white" id="about">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-normal text-center text-sage-900 mb-12">
-                Über uns
+                About
               </h2>
               <div className="mb-12 bg-sage-50 p-8 rounded-lg shadow-sm">
                 <div className="flex flex-col md:flex-row items-center gap-8">
@@ -228,7 +228,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-xl font-normal mb-2 text-sage-900">Ida</h3>
+                    <h3 className="text-xl font-normal mb-2 text-sage-900">Ida Patzelt</h3>
                     <p className="text-sage-700 mb-4">
                       Bildungswissenschaftlerin mit Fokus auf Gesundheit & Transparenz
                     </p>
