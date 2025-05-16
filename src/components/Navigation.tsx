@@ -24,8 +24,8 @@ export default function Navigation() {
     <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-md py-3' : 'bg-transparent py-5'}`}>
       <div className="container mx-auto px-6">
         <div className="flex justify-between items-center">
-          <Link href="/" className="text-sage-900 font-normal text-xl flex items-center tracking-tight">
-            <span className="text-olive-600 mr-1.5">●</span> Olive
+          <Link href="/" className="text-darkOlive-900 font-normal text-xl flex items-center tracking-tight">
+            <span className="text-vibrantGreen-600 mr-1.5">●</span> Olive
           </Link>
 
           {/* Mobile menu button */}
@@ -35,7 +35,7 @@ export default function Navigation() {
             aria-label="Toggle menu"
           >
             <svg
-              className="w-6 h-6 text-sage-800"
+              className="w-6 h-6 text-darkOlive-800"
               fill="none"
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -52,19 +52,19 @@ export default function Navigation() {
           </button>
 
           {/* Desktop menu */}
-          <div className="hidden md:flex items-center space-x-10">
-            <Link href="#why" className="text-sage-800 hover:text-olive-600 font-light transition-colors">
+          <div className="hidden md:flex items-center space-x-8">
+            <Link href="#why" className="text-darkOlive-800 hover:text-vibrantGreen-600 font-light transition-colors">
               Warum
             </Link>
-            <Link href="#olive-oil" className="text-sage-800 hover:text-olive-600 font-light transition-colors">
+            <Link href="#olive-oil" className="text-darkOlive-800 hover:text-vibrantGreen-600 font-light transition-colors">
               Olivenöl
             </Link>
-            <Link href="#about" className="text-sage-800 hover:text-olive-600 font-light transition-colors">
+            <Link href="#about" className="text-darkOlive-800 hover:text-vibrantGreen-600 font-light transition-colors">
               Über uns
             </Link>
             <Link
               href="#crowdfunding"
-              className="bg-transparent border border-olive-600 text-olive-600 px-6 py-2 rounded-none hover:bg-olive-600 hover:text-white transition-all duration-300"
+              className="bg-transparent border border-vibrantGreen-600 text-vibrantGreen-600 px-6 py-2 rounded-none hover:bg-vibrantGreen-600 hover:text-white transition-all duration-300"
             >
               Unterstützen
             </Link>

@@ -45,6 +45,42 @@ const config: Config = {
           800: '#735b39',
           900: '#5f4b33',
         },
+        darkOlive: {
+          50: '#f4f5f2',
+          100: '#e9ebe4',
+          200: '#d3d7c9',
+          300: '#b7c0a8',
+          400: '#9ba987',
+          500: '#7f9266',
+          600: '#637545',
+          700: '#4a5a34',
+          800: '#3a4729',
+          900: '#2a341e',
+        },
+        vibrantGreen: {
+          50: '#f0fdf4',
+          100: '#dcfce7',
+          200: '#bbf7d0',
+          300: '#86efac',
+          400: '#4ade80',
+          500: '#22c55e',
+          600: '#16a34a',
+          700: '#15803d',
+          800: '#166534',
+          900: '#14532d',
+        },
+        accentPink: {
+          50: '#fdf2f8',
+          100: '#fce7f3',
+          200: '#fbcfe8',
+          300: '#f9a8d4',
+          400: '#f472b6',
+          500: '#ec4899',
+          600: '#db2777',
+          700: '#be185d',
+          800: '#9d174d',
+          900: '#831843',
+        },
       },
       fontFamily: {
         sans: ['var(--font-inter)'],
@@ -64,6 +100,7 @@ const config: Config = {
       animation: {
         'float': 'float 8s ease-in-out infinite',
         'fade': 'fade 5s ease-in-out infinite',
+        'spin-slow': 'spin 20s linear infinite',
       },
       keyframes: {
         float: {
@@ -73,6 +110,10 @@ const config: Config = {
         fade: {
           '0%, 100%': { opacity: '0.8' },
           '50%': { opacity: '1' },
+        },
+        spin: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
         },
       },
     },
