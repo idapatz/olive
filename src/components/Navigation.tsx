@@ -25,7 +25,7 @@ export default function Navigation() {
       <div className="container mx-auto px-6">
         <div className="flex justify-between items-center">
           <Link href="/" className="text-sage-900 font-normal text-xl flex items-center tracking-tight">
-            <span className="text-olive-600 mr-1.5">●</span> Olive
+            <span className="text-vocavo-600 mr-1.5">●</span> vocavo
           </Link>
 
           {/* Mobile menu button */}
@@ -53,18 +53,18 @@ export default function Navigation() {
 
           {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-10">
-            <Link href="#why" className="text-sage-800 hover:text-olive-600 font-light transition-colors">
+            <Link href="#why" className="text-sage-800 hover:text-vocavo-600 font-light transition-colors">
               Warum
             </Link>
-            <Link href="#olive-oil" className="text-sage-800 hover:text-olive-600 font-light transition-colors">
+            <Link href="#olive-oil" className="text-sage-800 hover:text-vocavo-600 font-light transition-colors">
               Olivenöl
             </Link>
-            <Link href="#about" className="text-sage-800 hover:text-olive-600 font-light transition-colors">
+            <Link href="#about" className="text-sage-800 hover:text-vocavo-600 font-light transition-colors">
               Über uns
             </Link>
             <Link
               href="#crowdfunding"
-              className="bg-transparent border border-olive-600 text-olive-600 px-6 py-2 rounded-none hover:bg-olive-600 hover:text-white transition-all duration-300"
+              className="bg-transparent border border-vocavo-600 text-vocavo-600 px-6 py-2 rounded-none hover:bg-vocavo-600 hover:text-white transition-all duration-300"
             >
               Unterstützen
             </Link>
@@ -102,7 +102,7 @@ export default function Navigation() {
             <div className="px-4 py-3">
               <Link
                 href="#crowdfunding"
-                className="block w-full text-center border border-olive-600 text-olive-600 px-4 py-2 hover:bg-olive-600 hover:text-white transition-all duration-300"
+                className="block w-full text-center border border-vocavo-600 text-vocavo-600 px-4 py-2 hover:bg-vocavo-600 hover:text-white transition-all duration-300"
                 onClick={() => setIsOpen(false)}
               >
                 Unterstützen
