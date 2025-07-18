@@ -328,8 +328,8 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="mb-4 md:mb-0">
-                <div className="font-bold text-xl mb-2">Olive</div>
-                <p className="text-sage-300 text-sm">© 2023 Olive. Alle Rechte vorbehalten.</p>
+                <div className="font-bold text-xl mb-2">vocavo</div>
+                <p className="text-sage-300 text-sm">© 2023 vocavo. Alle Rechte vorbehalten.</p>
               </div>
               <div className="flex space-x-6">
                 <Link href="#" className="text-sage-300 hover:text-white">
