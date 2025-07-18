@@ -55,7 +55,7 @@ export default function Home() {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
                         </svg>
                       </div>
-                      <h4 className="text-base font-medium mb-2 text-sage-900">Pestizide in Obst</h4>
+                      <h4 className="text-base font-medium mb-2 text-sage-900">Pestizide</h4>
                       <p className="text-sm text-sage-700 font-light leading-relaxed">Welche Chemikalien esse ich mit?</p>
                     </div>
                   </div>
@@ -69,7 +69,7 @@ export default function Home() {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
                         </svg>
                       </div>
-                      <h4 className="text-base font-medium mb-2 text-sage-900">Vitamin-Gehalt</h4>
+                      <h4 className="text-base font-medium mb-2 text-sage-900">Vitamine</h4>
                       <p className="text-sm text-sage-700 font-light leading-relaxed">Wie viel Vitamine sind in meiner Paprika?</p>
                     </div>
                   </div>
@@ -108,57 +108,151 @@ export default function Home() {
 
         {/* Unsere Idee / Vision */}
         <section className="py-24 bg-white relative overflow-hidden">
-          {/* Add decorative circles */}
-          <Image
-            src="/Kreis orange.png"
-            alt="Decorative Orange Circle"
-            width={600}
-            height={600}
-            className="absolute -top-40 -right-20 opacity-60 animate-float z-0"
-          />
-          <Image
-            src="/Kreis grün.png"
-            alt="Decorative Green Circle"
-            width={500}
-            height={500}
-            className="absolute -bottom-40 -left-20 opacity-50 animate-float-delayed z-0"
-          />
-
           <div className="container mx-auto px-6 relative z-10">
             <div className="text-center mb-20">
               <span className="inline-block py-1 px-3 text-vocavo-600 text-sm mb-6 font-light border-b border-vocavo-200">VISION</span>
-              <h2 className="text-3xl md:text-4xl font-normal text-center text-sage-900 mb-8 tracking-tight">
+              <h2 className="text-2xl md:text-3xl font-normal text-center text-sage-900 mb-8 tracking-tight">
                 <span className="text-vocavo-600">Transparenz</span> über alles, was drin ist.
               </h2>
             </div>
-            <div className="max-w-3xl mx-auto">
-              <div className="space-y-10">
-                <div className="max-w-lg mx-auto">
-                  <p className="text-xl text-sage-800 font-light mb-4">Was wir tun:</p>
-                  <div className="flex items-start mb-6">
-                    <div className="flex-shrink-0 mt-1">
-                      <div className="w-4 h-4 border border-vocavo-400"></div>
+            <div className="max-w-6xl mx-auto">
+              <div className="flex flex-col lg:flex-row gap-12">
+                <div className="lg:w-1/2">
+                  <div className="space-y-10">
+                    <div className="max-w-lg">
+                      <p className="text-lg text-sage-800 font-light mb-4">Was wir tun:</p>
+                      <div className="flex items-start mb-6">
+                        <div className="flex-shrink-0 mt-1">
+                          <div className="w-4 h-4 border border-vocavo-400"></div>
+                        </div>
+                        <p className="ml-6 text-lg text-sage-700 font-light">Analyse von Inhaltsstoffen</p>
+                      </div>
+                      <div className="flex items-start mb-6">
+                        <div className="flex-shrink-0 mt-1">
+                          <div className="w-4 h-4 border border-vocavo-400"></div>
+                        </div>
+                        <p className="ml-6 text-lg text-sage-700 font-light">Test auf Pestizide und Schadstoffe</p>
+                      </div>
+                      <div className="flex items-start">
+                        <div className="flex-shrink-0 mt-1">
+                          <div className="w-4 h-4 border border-vocavo-400"></div>
+                        </div>
+                        <p className="ml-6 text-lg text-sage-700 font-light">Unabhängig, wissenschaftlich, nachvollziehbar</p>
+                      </div>
                     </div>
-                    <p className="ml-6 text-xl text-sage-700 font-light">Analyse von Inhaltsstoffen</p>
-                  </div>
-                  <div className="flex items-start mb-6">
-                    <div className="flex-shrink-0 mt-1">
-                      <div className="w-4 h-4 border border-vocavo-400"></div>
+                    <div className="text-lg text-sage-800 mt-16 pt-10 border-t border-sage-100">
+                      <p className="font-light text-center">
+                        Damit bewusste Entscheidungen möglich werden.<br />
+                        Für mehr Gesundheit. Für mehr Lebensqualität.
+                      </p>
                     </div>
-                    <p className="ml-6 text-xl text-sage-700 font-light">Test auf Pestizide und Schadstoffe</p>
-                  </div>
-                  <div className="flex items-start">
-                    <div className="flex-shrink-0 mt-1">
-                      <div className="w-4 h-4 border border-vocavo-400"></div>
-                    </div>
-                    <p className="ml-6 text-xl text-sage-700 font-light">Unabhängig, wissenschaftlich, nachvollziehbar</p>
                   </div>
                 </div>
-                <div className="text-xl text-sage-800 mt-16 pt-10 border-t border-sage-100">
-                  <p className="font-light text-center">
-                    Damit bewusste Entscheidungen möglich werden.<br />
-                    Für mehr Gesundheit. Für mehr Lebensqualität.
-                  </p>
+
+                <div className="lg:w-1/2">
+                  <div className="bg-white rounded-lg shadow-sm border border-sage-100 overflow-hidden h-full">
+                    <div className="p-4 bg-sage-50 border-b border-sage-100 sticky top-0 z-10">
+                      <h3 className="text-lg font-medium text-sage-900">Beispiel: Laboranalyse Olivenöl</h3>
+                    </div>
+                    <div className="overflow-y-auto" style={{ maxHeight: "500px" }}>
+                      <table className="w-full text-sm">
+                        <thead className="sticky top-0 bg-sage-50 z-10">
+                          <tr>
+                            <th className="px-4 py-2 text-left text-sage-700 font-medium">Kategorie</th>
+                            <th className="px-4 py-2 text-left text-sage-700 font-medium">Parameter</th>
+                            <th className="px-4 py-2 text-left text-sage-700 font-medium">Ergebnis</th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-sage-100">
+                          <tr className="hover:bg-sage-50">
+                            <td className="px-4 py-3 text-sage-900">Sensorik</td>
+                            <td className="px-4 py-3 text-sage-700">Fruchtigkeit (Median)</td>
+                            <td className="px-4 py-3 text-sage-900 font-medium">5,2</td>
+                          </tr>
+                          <tr className="hover:bg-sage-50">
+                            <td className="px-4 py-3 text-sage-900">Sensorik</td>
+                            <td className="px-4 py-3 text-sage-700">Bitterkeit (Median)</td>
+                            <td className="px-4 py-3 text-sage-900 font-medium">3,9</td>
+                          </tr>
+                          <tr className="hover:bg-sage-50">
+                            <td className="px-4 py-3 text-sage-900">Sensorik</td>
+                            <td className="px-4 py-3 text-sage-700">Schärfe (Median)</td>
+                            <td className="px-4 py-3 text-sage-900 font-medium">4,3</td>
+                          </tr>
+                          <tr className="hover:bg-sage-50">
+                            <td className="px-4 py-3 text-sage-900">Sensorik</td>
+                            <td className="px-4 py-3 text-sage-700">Fehler</td>
+                            <td className="px-4 py-3 text-sage-900 font-medium">{"< 0,3"}</td>
+                          </tr>
+                          <tr className="hover:bg-sage-50">
+                            <td className="px-4 py-3 text-sage-900">Sensorik</td>
+                            <td className="px-4 py-3 text-sage-700">Kategorie</td>
+                            <td className="px-4 py-3 text-sage-900 font-medium">Nativ extra</td>
+                          </tr>
+                          <tr className="hover:bg-sage-50">
+                            <td className="px-4 py-3 text-sage-900">Biophenole</td>
+                            <td className="px-4 py-3 text-sage-700">Biophenolgehalt</td>
+                            <td className="px-4 py-3 text-sage-900 font-medium">432 mg/kg</td>
+                          </tr>
+                          <tr className="hover:bg-sage-50">
+                            <td className="px-4 py-3 text-sage-900">Fettsäureprofil</td>
+                            <td className="px-4 py-3 text-sage-700">Ölsäure (C18:1)</td>
+                            <td className="px-4 py-3 text-sage-900 font-medium">75,20%</td>
+                          </tr>
+                          <tr className="hover:bg-sage-50">
+                            <td className="px-4 py-3 text-sage-900">Fettsäureprofil</td>
+                            <td className="px-4 py-3 text-sage-700">Linolsäure (C18:2)</td>
+                            <td className="px-4 py-3 text-sage-900 font-medium">6,90%</td>
+                          </tr>
+                          <tr className="hover:bg-sage-50">
+                            <td className="px-4 py-3 text-sage-900">Fettsäureprofil</td>
+                            <td className="px-4 py-3 text-sage-700">Palmitinsäure (C16:0)</td>
+                            <td className="px-4 py-3 text-sage-900 font-medium">10,80%</td>
+                          </tr>
+                          <tr className="hover:bg-sage-50">
+                            <td className="px-4 py-3 text-sage-900">Fettsäureprofil</td>
+                            <td className="px-4 py-3 text-sage-700">Linolensäure (C18:3)</td>
+                            <td className="px-4 py-3 text-sage-900 font-medium">0,70%</td>
+                          </tr>
+                          <tr className="hover:bg-sage-50">
+                            <td className="px-4 py-3 text-sage-900">Fettsäureprofil</td>
+                            <td className="px-4 py-3 text-sage-700">Trans-Fettsäuren</td>
+                            <td className="px-4 py-3 text-sage-900 font-medium">{"< 0,1%"}</td>
+                          </tr>
+                          <tr className="hover:bg-sage-50">
+                            <td className="px-4 py-3 text-sage-900">Diacylglyceride</td>
+                            <td className="px-4 py-3 text-sage-700">1,2-DAG</td>
+                            <td className="px-4 py-3 text-sage-900 font-medium">92%</td>
+                          </tr>
+                          <tr className="hover:bg-sage-50">
+                            <td className="px-4 py-3 text-sage-900">Diacylglyceride</td>
+                            <td className="px-4 py-3 text-sage-700">1,3-DAG</td>
+                            <td className="px-4 py-3 text-sage-900 font-medium">8%</td>
+                          </tr>
+                          <tr className="hover:bg-sage-50">
+                            <td className="px-4 py-3 text-sage-900">Diacylglyceride</td>
+                            <td className="px-4 py-3 text-sage-700">1,2/1,3-Verhältnis</td>
+                            <td className="px-4 py-3 text-sage-900 font-medium">11,5 : 1</td>
+                          </tr>
+                          <tr className="hover:bg-sage-50">
+                            <td className="px-4 py-3 text-sage-900">Chemisch</td>
+                            <td className="px-4 py-3 text-sage-700">Peroxidzahl</td>
+                            <td className="px-4 py-3 text-sage-900 font-medium">6,1 meq/kg</td>
+                          </tr>
+                          <tr className="hover:bg-sage-50">
+                            <td className="px-4 py-3 text-sage-900">Chemisch</td>
+                            <td className="px-4 py-3 text-sage-700">Freie Fettsäuren (FFA)</td>
+                            <td className="px-4 py-3 text-sage-900 font-medium">0,22%</td>
+                          </tr>
+                          <tr className="hover:bg-sage-50">
+                            <td className="px-4 py-3 text-sage-900">Pestizide</td>
+                            <td className="px-4 py-3 text-sage-700">Rückstände</td>
+                            <td className="px-4 py-3 text-sage-900 font-medium">Keine nachweisbar</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -171,13 +265,13 @@ export default function Home() {
             <div className="flex flex-col md:flex-row items-start gap-16 max-w-5xl mx-auto">
               <div className="md:w-1/2">
                 <span className="inline-block py-1 px-3 text-vocavo-600 text-sm mb-6 font-light border-b border-vocavo-200">UNSER STARTPUNKT</span>
-                <h2 className="text-3xl md:text-4xl font-normal text-sage-900 mb-10 tracking-tight">
+                <h2 className="text-2xl md:text-3xl font-normal text-sage-900 mb-10 tracking-tight">
                   Warum wir mit <span className="text-vocavo-600">Olivenöl</span> starten
                 </h2>
-                <p className="text-lg text-sage-700 mb-8 font-light">
+                <p className="text-lg text-sage-700 font-light mb-8">
                   Olivenöl ist mehr als nur ein Lebensmittel – es ist ein echtes Schlüsselprodukt für Gesundheit und Langlebigkeit.
                 </p>
-                <p className="text-lg text-sage-700 mb-8 font-light">
+                <p className="text-lg text-sage-700 font-light mb-8">
                   Zahlreiche Studien zeigen: Hochwertiges Olivenöl kann chronische Entzündungen im Körper senken, das Herz schützen und sogar das Risiko altersbedingter Erkrankungen reduzieren. In der Diskussion um Longevity spielt es eine zentrale Rolle.
                 </p>
               </div>
@@ -200,14 +294,14 @@ export default function Home() {
           <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-vocavo-300 rounded-full opacity-20 blur-xl transform translate-y-1/2"></div>
           <div className="container mx-auto px-4 text-center max-w-4xl relative z-10">
             <span className="inline-block py-1 px-3 rounded-full bg-vocavo-100 text-vocavo-700 text-sm font-medium mb-4">WERDE TEIL</span>
-            <h2 className="text-3xl md:text-5xl font-normal text-sage-900 mb-6">
+            <h2 className="text-2xl md:text-3xl font-normal text-sage-900 mb-6">
               Unser <span className="text-vocavo-600">Ziel</span>
             </h2>
-            <p className="text-xl text-sage-700 mb-8">
+            <p className="text-lg text-sage-700 mb-8">
               Wir wollen ein neues Level an Verbraucherinformation schaffen.<br />
               Für Lebensmittel. Für Supplements. Für mehr Klarheit, Gesundheit und Verantwortung.
             </p>
-            <p className="text-xl text-sage-700 mb-8 font-medium">
+            <p className="text-lg text-sage-700 mb-8 font-medium">
               Denn nur wer wirklich weiß, was drinsteckt, kann Entscheidungen treffen, die langfristig guttun.
             </p>
             <div className="bg-white p-8 rounded-xl shadow-lg mb-10 transform hover:shadow-xl transition-shadow duration-300">
