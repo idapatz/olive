@@ -40,22 +40,23 @@ export default function Home() {
           <div className="absolute top-0 right-0 w-96 h-96 bg-vocavo-200 rounded-full opacity-20 blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
           <div className="absolute bottom-0 left-0 w-80 h-80 bg-sage-200 rounded-full opacity-15 blur-3xl transform -translate-x-1/2 translate-y-1/2"></div>
           
-          <div className="container mx-auto px-6 relative z-10">
-            {/* Header */}
-            <div className="text-center mb-24">
-              <h2 className="text-4xl md:text-5xl font-normal text-center text-sage-900 mb-8 tracking-tight leading-tight">
-                <span className="text-vocavo-600 relative">
-                  Was steckt wirklich in unserem Essen?
-                  <div className="absolute -bottom-2 left-0 w-full h-1 bg-vocavo-200 rounded-full"></div>
-                </span>
-              </h2>
-              <div className="max-w-4xl mx-auto space-y-8">
-                <p className="text-xl md:text-2xl text-sage-700 font-light leading-relaxed">
-                  Es fehlen oft belastbare, unabhängige Informationen. Verpackungen versprechen viel, sagen aber wenig. <span className="text-vocavo-600 font-medium">Genau das ändern wir – mit fundierten Labortests und klaren Ergebnissen für dich.</span>
-                </p>
-              </div>
-            </div>
+          {/* Add decorative circles */}
+          <Image
+            src="/Kreis orange.png"
+            alt="Decorative Orange Circle"
+            width={600}
+            height={600}
+            className="absolute -top-40 -right-20 opacity-60 animate-float z-0"
+          />
+          <Image
+            src="/Kreis grün.png"
+            alt="Decorative Green Circle"
+            width={500}
+            height={500}
+            className="absolute -bottom-40 -left-20 opacity-50 animate-float-delayed z-0"
+          />
 
+          <div className="container mx-auto px-6 relative z-10">
             {/* Icon-Grid mit Beispielen */}
             <div className="flex flex-col md:flex-row gap-8">
               <div className="w-full md:w-1/2">
@@ -108,7 +109,7 @@ export default function Home() {
               {/* Text content on the right side */}
               <div className="w-full md:w-1/2 flex flex-col justify-center">
                 <h3 className="text-2xl md:text-3xl font-normal text-sage-900 mb-6">
-                  Was steckt wirklich in unserem Essen?
+                  Was steckt in unserem Essen?
                 </h3>
                 <p className="text-lg text-sage-700 font-light mb-6">
                   Es fehlen oft belastbare, unabhängige Informationen. Verpackungen versprechen viel, sagen aber wenig.
@@ -123,6 +124,22 @@ export default function Home() {
 
         {/* Unsere Idee / Vision */}
         <section className="py-24 bg-white relative overflow-hidden">
+          {/* Add decorative circles */}
+          <Image
+            src="/Kreis orange.png"
+            alt="Decorative Orange Circle"
+            width={600}
+            height={600}
+            className="absolute -top-40 -right-20 opacity-60 animate-float z-0"
+          />
+          <Image
+            src="/Kreis grün.png"
+            alt="Decorative Green Circle"
+            width={500}
+            height={500}
+            className="absolute -bottom-40 -left-20 opacity-50 animate-float-delayed z-0"
+          />
+
           <div className="container mx-auto px-6 relative z-10">
             <div className="text-center mb-20">
               <span className="inline-block py-1 px-3 text-vocavo-600 text-sm mb-6 font-light border-b border-vocavo-200">VISION</span>
