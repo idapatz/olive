@@ -24,7 +24,7 @@ export default function Home() {
           <div className="container relative z-10 mx-auto px-24 md:px-48 lg:px-64 xl:px-80 2xl:px-96">
             <div className="flex flex-col justify-center max-w-4xl">
               <h1 className="font-questrial text-white text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl mb-8 leading-tight">
-                WISSEN, WAS<br />WIRKLICH DRIN IST
+                WISSEN,<br />WAS WIRKLICH DRIN IST
               </h1>
               <h2 className="font-inter text-white text-xl md:text-2xl lg:text-3xl">
                 Nährstoffe, Schadstoffe, leere Versprechen?<br />
