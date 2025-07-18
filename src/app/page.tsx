@@ -39,54 +39,38 @@ export default function Home() {
           {/* Decorative background elements */}
           <div className="absolute top-0 right-0 w-96 h-96 bg-vocavo-200 rounded-full opacity-20 blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
           <div className="absolute bottom-0 left-0 w-80 h-80 bg-sage-200 rounded-full opacity-15 blur-3xl transform -translate-x-1/2 translate-y-1/2"></div>
-          
-          {/* Add decorative circles */}
-          <Image
-            src="/Kreis orange.png"
-            alt="Decorative Orange Circle"
-            width={600}
-            height={600}
-            className="absolute -top-40 -right-20 opacity-60 animate-float z-0"
-          />
-          <Image
-            src="/Kreis grün.png"
-            alt="Decorative Green Circle"
-            width={500}
-            height={500}
-            className="absolute -bottom-40 -left-20 opacity-50 animate-float-delayed z-0"
-          />
 
           <div className="container mx-auto px-6 relative z-10">
             {/* Icon-Grid mit Beispielen */}
-            <div className="flex flex-col md:flex-row gap-8">
+            <div className="flex flex-col md:flex-row gap-8 max-w-6xl mx-auto px-4 md:px-8 lg:px-16 xl:px-24">
               <div className="w-full md:w-1/2">
                 {/* Top row with two boxes side by side */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-3">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   {/* Pestizide in Obst */}
                   <div className="group relative">
                     <div className="absolute inset-0 bg-gradient-to-br from-vocavo-400 to-vocavo-600 rounded-md blur opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
-                    <div className="relative text-center p-2 bg-white rounded-md shadow-sm border border-sage-100 transform group-hover:-translate-y-1 group-hover:shadow-md transition-all duration-500">
-                      <div className="w-8 h-8 mx-auto mb-2 bg-gradient-to-br from-vocavo-500 to-vocavo-600 rounded-md flex items-center justify-center shadow-sm transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
-                        <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="relative text-center p-6 bg-gradient-to-b from-[#bfd20230] from-0% via-[#bfd20215] via-40% to-transparent to-60% bg-white rounded-md shadow-sm border border-sage-100 transform group-hover:-translate-y-1 group-hover:shadow-md transition-all duration-500">
+                      <div className="w-10 h-10 mx-auto mb-4 bg-gradient-to-br from-vocavo-500 to-vocavo-600 rounded-md flex items-center justify-center shadow-sm transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                        <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
                         </svg>
                       </div>
-                      <h4 className="text-sm font-medium mb-1 text-sage-900">Pestizide in Obst</h4>
-                      <p className="text-xs text-sage-700 font-light leading-relaxed">Welche Chemikalien esse ich mit?</p>
+                      <h4 className="text-base font-medium mb-2 text-sage-900">Pestizide in Obst</h4>
+                      <p className="text-sm text-sage-700 font-light leading-relaxed">Welche Chemikalien esse ich mit?</p>
                     </div>
                   </div>
 
                   {/* Vitamin-Gehalt */}
                   <div className="group relative">
                     <div className="absolute inset-0 bg-gradient-to-br from-vocavo-400 to-vocavo-600 rounded-md blur opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
-                    <div className="relative text-center p-2 bg-white rounded-md shadow-sm border border-sage-100 transform group-hover:-translate-y-1 group-hover:shadow-md transition-all duration-500">
-                      <div className="w-8 h-8 mx-auto mb-2 bg-gradient-to-br from-vocavo-500 to-vocavo-600 rounded-md flex items-center justify-center shadow-sm transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
-                        <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="relative text-center p-6 bg-gradient-to-b from-[#bfd20230] from-0% via-[#bfd20215] via-40% to-transparent to-60% bg-white rounded-md shadow-sm border border-sage-100 transform group-hover:-translate-y-1 group-hover:shadow-md transition-all duration-500">
+                      <div className="w-10 h-10 mx-auto mb-4 bg-gradient-to-br from-vocavo-500 to-vocavo-600 rounded-md flex items-center justify-center shadow-sm transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                        <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
                         </svg>
                       </div>
-                      <h4 className="text-sm font-medium mb-1 text-sage-900">Vitamin-Gehalt</h4>
-                      <p className="text-xs text-sage-700 font-light leading-relaxed">Wie viel Vitamine sind in meiner Paprika?</p>
+                      <h4 className="text-base font-medium mb-2 text-sage-900">Vitamin-Gehalt</h4>
+                      <p className="text-sm text-sage-700 font-light leading-relaxed">Wie viel Vitamine sind in meiner Paprika?</p>
                     </div>
                   </div>
                 </div>
@@ -94,25 +78,25 @@ export default function Home() {
                 {/* Bottom row with full-width box */}
                 <div className="group relative">
                   <div className="absolute inset-0 bg-gradient-to-br from-vocavo-400 to-vocavo-600 rounded-md blur opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
-                  <div className="relative text-center p-2 bg-white rounded-md shadow-sm border border-sage-100 transform group-hover:-translate-y-1 group-hover:shadow-md transition-all duration-500">
-                    <div className="w-8 h-8 mx-auto mb-2 bg-gradient-to-br from-vocavo-500 to-vocavo-600 rounded-md flex items-center justify-center shadow-sm transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
-                      <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="relative text-center p-6 bg-gradient-to-b from-[#bfd20230] from-0% via-[#bfd20215] via-40% to-transparent to-60% bg-white rounded-md shadow-sm border border-sage-100 transform group-hover:-translate-y-1 group-hover:shadow-md transition-all duration-500">
+                    <div className="w-10 h-10 mx-auto mb-4 bg-gradient-to-br from-vocavo-500 to-vocavo-600 rounded-md flex items-center justify-center shadow-sm transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6" />
                       </svg>
                     </div>
-                    <h4 className="text-sm font-medium mb-1 text-sage-900">Fundierte Entscheidung</h4>
-                    <p className="text-xs text-sage-700 font-light leading-relaxed">Wie soll ich das beste Lebensmittel wählen, wenn ich nicht weiß, was wirklich drin ist?</p>
+                    <h4 className="text-base font-medium mb-2 text-sage-900">Fundierte Entscheidung</h4>
+                    <p className="text-sm text-sage-700 font-light leading-relaxed">Wie soll ich das beste Lebensmittel wählen, wenn ich nicht weiß, was wirklich drin ist?</p>
                   </div>
                 </div>
               </div>
 
               {/* Text content on the right side */}
-              <div className="w-full md:w-1/2 flex flex-col justify-center">
-                <h3 className="text-2xl md:text-3xl font-normal text-sage-900 mb-6">
+              <div className="w-full md:w-1/2 flex flex-col justify-center md:pl-12 lg:pl-16">
+                <h3 className="text-2xl md:text-3xl font-normal text-sage-900 mb-8">
                   Was steckt in unserem Essen?
                 </h3>
-                <p className="text-lg text-sage-700 font-light mb-6">
-                  Es fehlen oft belastbare, unabhängige Informationen. Verpackungen versprechen viel, sagen aber wenig.
+                <p className="text-lg text-sage-700 font-light mb-8">
+                  Belastbare, unabhängige Informationen fehlen. Verpackungen versprechen viel, sagen aber wenig.
                 </p>
                 <p className="text-lg text-sage-700 font-light">
                   <span className="text-vocavo-600 font-medium">Genau das ändern wir – mit fundierten Labortests und klaren Ergebnissen für dich.</span>
