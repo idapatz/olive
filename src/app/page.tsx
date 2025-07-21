@@ -266,14 +266,75 @@ export default function Home() {
               <div className="md:w-1/2">
                 <span className="inline-block py-1 px-3 text-vocavo-600 text-sm mb-6 font-light border-b border-vocavo-200">UNSER STARTPUNKT</span>
                 <h2 className="text-2xl md:text-3xl font-normal text-sage-900 mb-10 tracking-tight">
-                  Warum wir mit <span className="text-vocavo-600">Olivenöl</span> starten
+                  WARUM POLYPHENOLE ZÄHLEN – UND WARUM WIR MIT <span className="text-vocavo-600">OLIVENÖL</span> STARTEN
                 </h2>
                 <p className="text-lg text-sage-700 font-light mb-8">
-                  Olivenöl ist mehr als nur ein Lebensmittel – es ist ein echtes Schlüsselprodukt für Gesundheit und Langlebigkeit.
+                  Olivenöl ist mehr als nur Fett. Es ist eines der wenigen Lebensmittel, bei dem die Dosis an Polyphenolen nachweislich über Gesundheit oder Werbegag entscheidet.
+                </p>
+                <div className="mb-8">
+                  <p className="text-lg text-sage-800 font-medium mb-4">Polyphenole können:</p>
+                  <ul className="space-y-2 text-lg text-sage-700 font-light">
+                    <li className="flex items-start">
+                      <span className="text-vocavo-600 mr-2">–</span>
+                      Entzündungen im Körper senken
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-vocavo-600 mr-2">–</span>
+                      Zellen vor oxidativem Stress schützen
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-vocavo-600 mr-2">–</span>
+                      Herz und Gefäße stärken
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-vocavo-600 mr-2">–</span>
+                      das Risiko für Typ-2-Diabetes und Alzheimer verringern
+                    </li>
+                  </ul>
+                </div>
+                <p className="text-lg text-sage-700 font-light mb-4">
+                  Aber nur, wenn genug davon enthalten ist.
                 </p>
                 <p className="text-lg text-sage-700 font-light mb-8">
-                  Zahlreiche Studien zeigen: Hochwertiges Olivenöl kann chronische Entzündungen im Körper senken, das Herz schützen und sogar das Risiko altersbedingter Erkrankungen reduzieren. In der Diskussion um Longevity spielt es eine zentrale Rolle.
+                  Die Forschung zeigt: Viele Effekte, wie z. B. Schutz vor Demenz oder bessere Blutzuckerwerte, traten nur bei Ölen mit hohem Polyphenolgehalt auf – ab etwa 250–400 mg/kg aufwärts.
                 </p>
+                <p className="text-lg text-sage-700 font-light mb-8">
+                  Billige Supermarktöle liegen oft deutlich darunter. Manche enthalten kaum messbare Mengen – trotz schöner Etiketten.
+                </p>
+                <div className="bg-sage-50 p-6 rounded-lg mb-8">
+                  <p className="text-lg text-sage-800 font-medium mb-4">Deshalb testen wir:</p>
+                  <ul className="space-y-2 text-lg text-sage-700">
+                    <li className="flex items-start">
+                      <span className="text-vocavo-600 mr-2">•</span>
+                      Wie viele Polyphenole sind wirklich im Öl?
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-vocavo-600 mr-2">•</span>
+                      Reicht das für die versprochenen Effekte?
+                    </li>
+                  </ul>
+                </div>
+                <p className="text-xl text-sage-900 font-medium">
+                  Denn nur wer weiß, was drin ist, kann entscheiden, was wirkt.
+                </p>
+                <a 
+                  href="https://blueprint.bryanjohnson.com/products/extra-virgin-olive-oil?tolstoyAutoOpen=1fynpgcybcbcj&utm_source=tolstoy&utm_medium=feed_share&tolstoyStartVideo=ffb27a39-d42f-4d3a-bcee-2a755b0d9ce2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block relative w-full aspect-video mt-8 rounded-lg overflow-hidden shadow-lg bg-sage-100 hover:shadow-xl transition-shadow duration-300"
+                >
+                  <div className="absolute inset-0 flex items-center justify-center bg-sage-900/10">
+                    <div className="bg-white/90 backdrop-blur-sm rounded-lg p-4 text-center">
+                      <div className="w-16 h-16 mx-auto mb-2 rounded-full bg-vocavo-600 flex items-center justify-center">
+                        <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                      </div>
+                      <p className="text-sage-900 font-medium">Bryan Johnson erklärt die Bedeutung von hochwertigem Olivenöl</p>
+                    </div>
+                  </div>
+                </a>
               </div>
               <div className="md:w-1/2 border-t md:border-l md:border-t-0 border-sage-200 pt-10 md:pt-0 md:pl-16">
                 <p className="text-lg text-sage-800 mb-10 font-light">
